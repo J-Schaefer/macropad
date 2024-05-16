@@ -4,7 +4,8 @@ sys.path.append("src/klavgen")
 print(sys.path)
 
 from klavgen import *
-from klavgen.classes import Key
+# from klavgen.classes import Key
+from klavgen.config import ScrewHoleConfig
 
 import cadquery as cq
 
@@ -15,9 +16,11 @@ config = Config(
         switch_type=SwitchType.MX,
         case_base_height=18
     ),
+    screw_hole_config=ScrewHoleConfig(screw_rim_radius=3.5,
+                                      screw_insert_hole_width=2.2),
     mx_key_config=MXKeyConfig(case_tile_margin=7.5),
     # choc_key_config=ChocKeyConfig(case_tile_margin=7.6),
-    # controller_config=ControllerConfig(case_tile_margin=5),
+    controller_config=ControllerConfig(case_tile_margin=5),
     # usbc_jack_config=USBCJackConfig(case_tile_margin=5)
 )
 
