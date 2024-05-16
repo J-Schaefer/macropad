@@ -1,3 +1,3 @@
 [submodule "design/src/klavgen"]
 	path = design/src/klavgen
-	url = https://github.com/klavgen/klavgen.git
+	url = git@github.com:J-Schaefer/klavgen.git
